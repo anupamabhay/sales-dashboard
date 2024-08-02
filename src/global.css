@@ -30,7 +30,7 @@
 }
 
 .navbar {
-    width: 15vw;
+    /* width: 15vw; */
     height: 100vh;
 }
 .navbar ul {
@@ -39,6 +39,7 @@
     padding: 0.5rem;
     padding-left: 0;
     height: 100%;
+    width: 15vw;
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -90,7 +91,8 @@ li a:hover {
     border-radius: 0.5rem;
     background-color: white;    
     height: 100%;
-    width: 65%;
+    /* width: 65%; */
+    flex-grow: 2;
     display: flex;
     flex-direction: column;
 }
@@ -119,8 +121,9 @@ li a:hover {
     border: 1px solid rgb(207, 206, 206);
     border-radius: 0.5rem;
     background-color: white;
-    width: 35%;
+    /* width: 35%; */
     height: 100%;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
@@ -138,3 +141,23 @@ li a:hover {
     width: 100%;
     margin-top: 3rem;
 }
+
+@media screen and (max-width: 800px) {
+    .navbar ul {
+        width: max-content;
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    li a {
+        align-items: center;
+    }
+
+    li svg {
+        margin: 0;
+    }
+}
+
+/* @media screen and (min-width: 801px) */
