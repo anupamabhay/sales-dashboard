@@ -44,6 +44,10 @@
     flex-direction: column;
     gap: 0.5rem;    
 }
+
+li svg {
+    margin-right: 0.5rem;
+}
   
 li a {
     border-top-right-radius: 0.5rem;
@@ -78,7 +82,7 @@ li a:hover {
     width: max-content;
     height: 100%;
     padding: 0.5rem;
-    color: blueviolet;
+    color: #8a2be2;
 }
 
 .graph-container {
